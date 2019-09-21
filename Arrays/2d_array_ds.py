@@ -10,8 +10,8 @@ import sys
 def hourglassSum(arr):
     ret = None
 
-    for j in range(4):
-        for i in range(4):
+    for j in range(len(arr) - 2):
+        for i in range(len(arr) - 2):
             total = arr[j][i] + arr[j][i + 1] + arr[j][i + 2] \
                 + arr[j + 1][i + 1] \
                 + arr[j + 2][i] + arr[j + 2][i + 1] + arr[j + 2][i + 2]
